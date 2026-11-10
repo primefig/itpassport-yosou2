@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#14263e"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<meta name="apple-mobile-web-app-title" content="IP模試2"/>
+<meta name="description" content="ITパスポート予想問題2の80問解答・採点を端末に保存する個人用学習ツール"/>
+<link rel="manifest" href="./manifest.webmanifest"/>
+<link rel="icon" href="./icon-192.png" type="image/png"/>
+<link rel="apple-touch-icon" href="./icon-192.png"/>
+<title>ITパスポート｜予想問題2 スマホ解答・採点</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:#1b2b41;background:#f4f6f9;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}a{color:#006f8d}header{background:#17283e;color:#fff;padding:18px max(22px,calc((100vw - 1200px)/2));box-shadow:0 2px 14px #14263e12}header .head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}h1{font-size:21px;letter-spacing:.015em;margin:2px 0 0;font-weight:750}.eyebrow{text-transform:uppercase;color:#a9ccda;font-size:11px;letter-spacing:.16em;font-weight:700}.subtitle{color:#a9bdcb;font-size:12px;margin-top:5px}.badge{display:inline-flex;align-items:center;gap:7px;border:1px solid #50627b;border-radius:999px;padding:6px 11px;color:#e1edf3;font-weight:650;font-size:12px}.dot{width:7px;height:7px;border-radius:50%;background:#6edebd}.shell{max-width:1220px;padding:24px 18px 50px;margin:auto;display:grid;grid-template-columns:320px minmax(0,1fr);gap:22px}.panel{border:1px solid #e2e7ed;background:white;border-radius:16px;box-shadow:0 5px 22px #20344a09}.side{display:flex;flex-direction:column;gap:16px}.padded{padding:19px}.panel h2{font-size:15px;margin:0 0 17px;font-weight:750}.panel h3{font-size:13px;margin:0 0 12px;color:#566579}.muted{color:#728193}.small{font-size:12px}.tiny{font-size:11px}.progress-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px}.big{font-size:28px;font-weight:800;letter-spacing:-.035em}.track{height:9px;background:#e9eef3;border-radius:99px;overflow:hidden}.fill{height:100%;border-radius:99px;background:#128e88;transition:width .2s ease}.statrow{margin-top:15px}.statline{display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px}.timerbox{display:flex;align-items:center;justify-content:space-between;gap:10px}.clock{font-size:25px;letter-spacing:.035em;font-weight:760;font-variant-numeric:tabular-nums}.controls{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid #d6e0e8;background:#fff;border-radius:10px;padding:10px 14px;font-size:13px;font-weight:700;color:#2e4158;transition:background .13s,border-color .13s}.btn:hover:not(:disabled){background:#f0f5f8;border-color:#aebec9}.btn.primary{background:#087f82;border-color:#087f82;color:white}.btn.primary:hover:not(:disabled){background:#00696d}.btn.dark{background:#1e344c;color:#fff;border-color:#1e344c}.btn.flat{border:none;padding:8px;background:transparent;color:#007f84}.btn.danger{color:#a8343a;border-color:#e8cbcb}.btn.full{width:100%}.btn.sm{padding:7px 10px;font-size:12px}.intro{padding:22px 26px;border-bottom:1px solid #e8edf2;display:flex;align-items:center;gap:14px;justify-content:space-between;flex-wrap:wrap}.intro strong{font-size:15px}.intro p{margin:5px 0 0;font-size:12px;color:#667789;line-height:1.65}.tabs{display:flex;gap:5px;align-items:center}.tab{padding:8px 13px;border:0;background:transparent;border-radius:10px;color:#748398;font-size:13px;font-weight:750}.tab.active{background:#e7f3f3;color:#007d82}.main-inner{padding:26px}.qtop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.qnum{font-weight:850;font-size:31px;letter-spacing:-.025em}.category{font-size:12px;font-weight:800;border-radius:8px;padding:6px 10px;background:#e8f1ff;color:#27649b}.category.management{background:#fff1e0;color:#9b6a1e}.category.technology{background:#e5f6ef;color:#127a58}.topic{font-size:19px;font-weight:750;margin:20px 0 8px}.detail{font-size:13px;color:#66788a;line-height:1.7}.source-box{border-radius:12px;border:1px dashed #d4dee7;background:#f8fafc;margin:20px 0;padding:20px 19px}.source-box p{font-size:13px;line-height:1.75;margin:0 0 10px;color:#53677b}.source-box a{font-size:13px;font-weight:750}.selection-head{margin:21px 0 14px;font-weight:750;font-size:14px}.answers{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.answer{min-height:84px;border:1px solid #dfe6ed;border-radius:13px;background:#fff;display:flex;align-items:center;justify-content:center;gap:9px;font-size:21px;font-weight:760;color:#3b4f62}.answer .letter{border:1px solid #dce5ec;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;font-size:17px}.answer.selected{background:#e5f5f2;border:2px solid #0d8f84;color:#05796e}.answer.selected .letter{border-color:#0d8f84}.answer:hover:not(:disabled){background:#f2f8f9}.confidence{margin-top:24px;padding-top:20px;border-top:1px solid #e8edf2}.chiprow{display:flex;gap:8px;flex-wrap:wrap}.chip{border-radius:99px;border:1px solid #dce4eb;background:#fff;padding:7px 13px;font-size:12px;color:#617385}.chip.active{background:#e9edf8;border-color:#5a72b2;color:#334d90;font-weight:750}.qfooter{display:flex;justify-content:space-between;gap:12px;margin-top:26px;padding-top:23px;border-top:1px solid #ebeff3;align-items:center;flex-wrap:wrap}.qfooter .next{display:flex;gap:8px}.steptext{font-size:12px;color:#758596}.navigator{padding:19px}.nav-title{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px}.legend{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:13px;color:#718195;font-size:11px}.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:3px;background:#e9edf2;vertical-align:middle}.legend i.done{background:#108b85}.legend i.current{background:white;border:2px solid #2365a1}.navgrid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}.navgrid button{height:30px;border:1px solid #e3e9ef;background:#f4f6f8;border-radius:6px;font-size:11px;color:#6a7d90;padding:0;font-weight:700}.navgrid button.done{color:white;background:#118b85;border-color:#118b85}.navgrid button.current{box-shadow:0 0 0 2px #2378c5;border-color:#fff}.navgrid button:hover{filter:brightness(.96)}.navgrid button.sectiongap{margin-left:0}.hr{height:1px;background:#edf1f5;margin:15px 0}.actions{display:grid;gap:8px}.note{background:#fff9ec;border:1px solid #f2e3c3;border-radius:12px;padding:12px;font-size:12px;line-height:1.7;color:#7a6131}.banner{background:#edf7f5;border:1px solid #d1e9e5;border-radius:12px;padding:15px 18px;font-size:13px;line-height:1.75;color:#236a62;margin-bottom:18px}.warn{background:#fff7ed;border-color:#f3ddbe;color:#83602c}.scorebig{font-size:46px;font-weight:850;letter-spacing:-.04em;color:#0d827c}.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:17px 0 26px}.kpi{padding:15px;background:#f6f9fa;border:1px solid #e7ecef;border-radius:12px}.kpi .value{font-size:22px;font-weight:800;margin-top:7px}.results-table{width:100%;border-collapse:collapse;font-size:12px}.results-table th,.results-table td{border-bottom:1px solid #e9eef2;padding:11px 10px;text-align:left}.results-table th{color:#77869a;font-size:11px;font-weight:750;background:#f7f9fa}.results-table td:last-child{text-align:right}.tag{font-size:11px;padding:3px 7px;border-radius:6px;display:inline-block;background:#eaf5f2;color:#087767;font-weight:750}.tag.bad{background:#fdf0ef;color:#b34343}.tag.none{background:#f1f3f6;color:#7b8896}.filterbar{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.select{border:1px solid #dce4e9;background:#fff;border-radius:8px;padding:8px 9px;font-size:12px}.footerhint{color:#8593a2;font-size:11px;line-height:1.7;margin-top:12px}.utilities{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.empty{padding:30px 20px;text-align:center;color:#6d7e8e;font-size:13px;line-height:1.8}.topiclink{color:#42647c;text-decoration:none;border-bottom:1px dotted #93abbc}.section-heading{font-size:18px;font-weight:800;margin:30px 0 12px}.readonly{opacity:.7}@media(max-width:970px){.shell{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.navigator{grid-column:1/-1}.navgrid{grid-template-columns:repeat(10,1fr)}header{padding:18px 20px}}@media(max-width:600px){header{padding:15px}.shell{padding:12px 10px 35px;gap:12px}.side{display:flex;gap:12px}.padded,.navigator{padding:14px}.main-inner{padding:18px 15px}.intro{padding:15px}.qnum{font-size:26px}.topic{font-size:17px}.answers{grid-template-columns:repeat(2,1fr)}.answer{min-height:67px}.navgrid{grid-template-columns:repeat(8,1fr)}.kpi-grid{grid-template-columns:1fr 1fr}.scorebig{font-size:36px}.results-table th,.results-table td{padding:9px 5px}h1{font-size:18px}}
+@media(max-width:600px){.shell{display:flex;flex-direction:column}.shell>main{order:0}.shell>.side{order:1}}
+/* Safari向け補助操作と安全領域 */
+.pdf-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 7px}
+.pdf-status{font-size:12px;line-height:1.6;color:#5b7185}
+.pdf-status.ready{color:#096b55;font-weight:700}
+.pdf-status.wait{color:#866531}
+#mobileDock{display:none}
+@media(max-width:600px){
+ body{padding-bottom:calc(75px + env(safe-area-inset-bottom))}
+ .answer{min-height:72px;font-size:23px}
+ .answer .letter{width:42px;height:42px;font-size:20px}
+ .qfooter{gap:10px}
+ .qfooter .next{width:100%;display:grid;grid-template-columns:1fr 1fr}
+ .qfooter .next .btn{min-height:45px}
+ .source-box{padding:16px;margin:16px 0}
+ .source-box .btn{min-height:44px}
+ #mobileDock{display:flex;align-items:center;gap:9px;position:fixed;left:0;bottom:0;right:0;z-index:30;background:#ffffffef;backdrop-filter:blur(14px);border-top:1px solid #dce3eb;padding:9px 12px calc(9px + env(safe-area-inset-bottom));box-shadow:0 -3px 20px #152e3b12}
+ #mobileDock:empty{display:none}
+ #mobileDock .btn{height:44px;flex:1;font-size:13px}
+ #mobileDock .btn.primary{flex:1.3}
+}
+</style>
+</head>
+<body>
+<header><div class="head"><div><div class="eyebrow">IT PASSPORT / PRACTICE</div><h1>オリジナル予想問題２ <span style="font-weight:450;color:#b6c7d4">解答シート</span></h1><div class="subtitle">Safari対応・80問の解答と自動採点</div></div><div class="badge"><span class="dot"></span>解答を端末に自動保存</div></div></header>
+<div class="shell"><aside id="sidebar" class="side"></aside><main class="panel"><div id="main"></div></main></div>
+<input id="progressFile" type="file" accept=".json,application/json" hidden/>
+<input id="problemFile" type="file" accept=".pdf,application/pdf" hidden/>
+<div id="mobileDock" role="navigation" aria-label="問題の移動"></div>
+<script>
+'use strict';
+// 問題本文・選択肢は収録せず、公式PDFと併用する設計。
+// 問題PDFはサイトには設置せず、利用者が自分の端末から登録する。
+// PDF は利用者の iPhone／PC の IndexedDB にのみ保存し、サーバーへ送信しません。
+const PAGE_BY_QUESTION=JSON.parse("[1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 10, 10, 11, 11, 11, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 15, 15, 15, 16, 16, 16, 17, 18, 18, 18, 18, 19, 19, 20, 20, 20, 20, 21, 21, 21, 22, 22, 23, 23, 24, 24, 24, 24, 25, 25, 25, 25, 26, 26, 27, 27, 27, 28, 28]");
+const TOPICS=`電子メール|業務プロセス
+PPM|経営戦略手法
+システム化計画の立案|システム化計画
+チャレンジャー戦略|経営戦略手法
+SCM|経営管理システム
+財務諸表|会計・財務
+予想利益の比較|会計・財務
+ROE|会計・財務
+損益分岐点売上高|会計・財務
+MBO|経営戦略手法
+RFP|調達計画・実施
+下請法の目的|労働関連・取引関連法規
+ベンチマーキング|ビジネス戦略と目標・評価
+ビジネスインパクト分析|システム化計画
+ワントゥワンマーケティング|マーケティング
+部品の正味所要量|業務分析・データ利活用
+DFD|業務プロセス
+SWOT分析|経営戦略手法
+QRコード|標準化関連
+著作権法|知的財産権
+デビットカード|ビジネスシステム
+G to B|e-ビジネス
+経営組織|経営・組織論
+特許権|知的財産権
+プライバシーマーク制度|その他の法律・ガイドライン
+散布図|業務分析・データ利活用
+サイトライセンス|知的財産権
+情報リテラシー|システム活用促進・評価
+コンパイラの役割|システム開発技術
+ソフトウェア開発のプロセス|システム開発技術
+RAD|開発プロセス・手法
+テスト手法|システム開発技術
+アローダイアグラム|プロジェクトマネジメント
+WBS|プロジェクトマネジメント
+スケジュール管理|プロジェクトマネジメント
+PMBOK|プロジェクトマネジメント
+締結される合意書|サービスマネジメント
+問題管理|サービスマネジメントシステム
+サービスデスク|サービスマネジメントシステム
+リスク分析|サービスマネジメント
+進捗率の計算|プロジェクトマネジメント
+サージプロテクト|ファシリティマネジメント
+システム監査人の独立性|システム監査
+システム監査の手順|システム監査
+システム保守|システム開発技術
+ぺネトレーションテスト|システム開発技術
+ファシリティマネジメント|ファシリティマネジメント
+内部統制|内部統制
+基数変換|離散数学
+確率|応用数学
+集合|離散数学
+小さな数値を表す接頭語|情報に関する理論
+データ構造|離散数学
+HTML&CSS|情報デザイン
+Javaプログラムの種類|情報に関する理論
+キャッシュメモリ|メモリ
+コンピュータの五大機能|プロセッサ
+IrDA|入出力デバイス
+USBの特徴|入出力デバイス
+デュプレックスシステム|システムの構成
+ランニングコスト|システムの評価指標
+稼働率|システムの評価指標
+OSの種類|オペレーティングシステム
+ファイルシステム|ファイルシステム
+表計算ソフト|オフィスツール
+有機ELディスプレイ|コンピュータ・入出力装置
+ポインティングデバイス|コンピュータ・入出力装置
+GUI部品|情報デザイン
+Webユーザビリティ設計|インタフェース設計
+MIDI|マルチメディア技術
+コンピュータグラフィックス|マルチメディア応用
+E-R図|データベース設計
+LAN間中継装置|ネットワーク方式
+伝送時間の計算|ネットワーク応用
+POP3の説明|通信プロトコル
+XSS|情報セキュリティ
+情報セキュリティマネジメント|情報セキュリティ管理
+cookie|マルチメディア技術
+サラミ法|情報セキュリティ
+USB3.0|入出力デバイス`;
+const ROWS=TOPICS.split('\n').map((x,i)=>{const [topic,subcategory]=x.split('|');return {n:i+1,topic,subcategory,domain:i<28?'ストラテジ系':i<48?'マネジメント系':'テクノロジ系',cls:i<28?'strategy':i<48?'management':'technology'};});
+if(ROWS.length!==80) throw new Error('問題数が80ではありません');
+const STORE='itpassport-yosou2-answer-v1';
+const KANA=['ア','イ','ウ','エ'];
+// ユーザーから提供された公式解答例PDFを80問照合した正答データ。
+// 解答を確定する前は画面・エクスポートには表示しない。
+const OFFICIAL_KEYS="アウエエエエイエウウアウエイイイエイウウアイウウエイアイウイアエウウウエイウイアウイイアアエイエエウアエイイウアイウエエアイアイウエエウイイエアウイウイイイウエ".split('');
+if(OFFICIAL_KEYS.length!==80||OFFICIAL_KEYS.some(k=>!KANA.includes(k)))throw new Error('正答データを検証できません');
+// 問題PDFをIndexedDBに保存：GitHub Pages側には送信しない。
+const PDF_DB_NAME='itpassport-yosou2-local-pdf';
+let pdfReady=false, pdfBusy=true, pdfObjectUrl=null;
+function openPdfDB(){return new Promise((resolve,reject)=>{if(!('indexedDB' in window))return reject(Error('このブラウザではPDFの保存機能を利用できません。'));const req=indexedDB.open(PDF_DB_NAME,1);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('attachments'))req.result.createObjectStore('attachments');};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
+async function fetchSavedPdf(){const db=await openPdfDB();try{return await new Promise((resolve,reject)=>{const tx=db.transaction('attachments','readonly');const q=tx.objectStore('attachments').get('questions');q.onsuccess=()=>resolve(q.result||null);q.onerror=()=>reject(q.error);});}finally{db.close();}}
+async function savePdfFile(file){const db=await openPdfDB();try{await new Promise((resolve,reject)=>{const tx=db.transaction('attachments','readwrite');tx.objectStore('attachments').put(file,'questions');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error);});}finally{db.close();}}
+function setPdfUrl(file){if(pdfObjectUrl)URL.revokeObjectURL(pdfObjectUrl);pdfObjectUrl=file?URL.createObjectURL(file):null;pdfReady=!!file;pdfBusy=false;render();}
+async function initPdf(){try{const file=await fetchSavedPdf();setPdfUrl(file);}catch(e){console.warn('PDF storage unavailable:',e);pdfBusy=false;render();}}
+function openQuestionPdf(n){if(!pdfObjectUrl){alert('まず「問題PDFを登録」から、公式PDFを選択してください。');return;}const u=pdfObjectUrl+'#page='+PAGE_BY_QUESTION[n];const tab=window.open(u,'_blank','noopener');if(!tab){alert('PDFを開けませんでした。Safariでポップアップを許可するか、PDFを「ファイル」アプリから開いてください。');}}
+function pdfSource(){return `<p>問題文は<strong>公式問題PDF</strong>で確認します。PDFはこの端末内だけに保存され、Webサイトへは送信されません。</p><div class="pdf-actions"><button type="button" class="btn sm" data-action="pdf-pick">${pdfReady?'問題PDFを差し替える':'問題PDFを登録する'}</button><button type="button" class="btn primary sm" data-action="open-pdf" ${pdfReady?'':'disabled'}>この問題のPDFページを開く ↗</button></div><span class="pdf-status ${pdfReady?'ready':'wait'}">${pdfBusy?'問題PDFの保存状態を確認中…':pdfReady?'PDF登録済み（端末内に保存されています）':'PDF未登録：iPhoneの「ファイル」から問題PDFを選択してください'}</span><span class="muted tiny" style="display:block;margin-top:9px">iPhoneでは別画面でPDFが開きます。SafariのPDF表示によっては指定ページへ移動しないため、その場合は問題番号に対応するページを手動で探してください。正答は提出まで画面に表示しません。</span>`;}
+function renderMobileDock(){const d=document.getElementById('mobileDock');if(!d)return;d.innerHTML=tab!=='answer'?'':`<button class="btn" data-action="prev" ${state.index===0?'disabled':''}>← 前へ</button><button class="btn primary" data-action="open-pdf" ${pdfReady?'':'disabled'}>PDFを開く</button><button class="btn" data-action="next" ${state.index===79?'disabled':''}>次へ →</button>`;}
+function fresh(){return {version:1,index:0,answers:Array(80).fill(null),confidence:Array(80).fill(null),elapsed:0,runningSince:null,finishedAt:null,createdAt:new Date().toISOString()};}
+let state=load();let tab='answer',filter='all';
+function load(){try{const o=JSON.parse(localStorage.getItem(STORE));if(!o || !Array.isArray(o.answers) || o.answers.length!==80)return fresh();return { ...fresh(),...o,answers:o.answers.map(x=>KANA.includes(x)?x:null),confidence:Array.isArray(o.confidence)&&o.confidence.length===80?o.confidence:Array(80).fill(null), index:Math.min(79,Math.max(0,Number(o.index)||0))};}catch(e){return fresh();}}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){window.alert('保存に失敗しました。ブラウザの保存容量やプライベートモードを確認し、JSONバックアップを保存してください。');}}
+function fmtTime(ms){const s=Math.floor(Math.max(0,ms)/1000);return `${String(Math.floor(s/3600)).padStart(2,'0')}:${String(Math.floor(s%3600/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;}
+function elapsed(){return state.elapsed+(state.runningSince?Math.max(0,Date.now()-state.runningSince):0);}
+function countAnswered(start=0,end=80){return state.answers.slice(start,end).filter(Boolean).length;}
+function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function rowDomain(start,end,name){let n=countAnswered(start,end),d=end-start;return `<div class="statrow"><div class="statline"><span>${name}</span><strong>${n} / ${d}</strong></div><div class="track"><div class="fill" style="width:${100*n/d}%"></div></div></div>`;}
+function navigate(i){state.index=Math.min(79,Math.max(0,i));tab='answer';save();render();window.scrollTo({top:0,behavior:'smooth'});}
+function renderSidebar(){const answered=countAnswered();document.getElementById('sidebar').innerHTML=`<section class="panel padded"><div class="progress-head"><h2 style="margin:0">解答の進捗</h2><span class="muted small">${Math.round(answered/80*100)}%</span></div><div class="big">${answered}<span style="font-size:16px;color:#8796a5;font-weight:550"> / 80問</span></div><div class="track" style="margin-top:8px"><div class="fill" style="width:${answered/80*100}%"></div></div>${rowDomain(0,28,'ストラテジ系')}${rowDomain(28,48,'マネジメント系')}${rowDomain(48,80,'テクノロジ系')}</section><section class="panel padded"><h2>試験タイマー</h2><div class="timerbox"><div id="clock" class="clock">${fmtTime(elapsed())}</div><button class="btn sm ${state.runningSince?'':'primary'}" data-action="timer" ${state.finishedAt?'disabled':''}>${state.runningSince?'一時停止':'開始 / 再開'}</button></div><p class="footerhint">目安120分。タイマーはページを閉じても、開始時刻からの経過時間を計測します。提出時に自動停止します。</p></section><section class="panel navigator"><div class="nav-title"><h2 style="margin:0">問題一覧</h2><span class="muted tiny">番号を選択して移動</span></div><div class="legend"><span><i class="done"></i>解答済み</span><span><i></i>未回答</span><span><i class="current"></i>表示中</span></div><div class="navgrid">${ROWS.map((r,i)=>`<button type="button" data-action="nav" data-index="${i}" title="問${r.n}：${esc(r.topic)}" class="${state.answers[i]?'done ':''}${state.index===i?'current':''}">${r.n}</button>`).join('')}</div><div class="hr"></div><div class="actions"><button class="btn primary full" data-action="finish">${state.finishedAt?'集計結果を見る':'解答を確定・採点する'}</button><button class="btn full" data-action="export-json">進捗のバックアップ（JSON）</button><div class="utilities"><button class="btn sm" data-action="import-json">バックアップ読込</button><button class="btn sm" data-action="export-csv">解答CSV出力</button></div><button class="btn sm danger" data-action="reset">すべて初期化</button></div><div class="footerhint">解答は基本的にこのブラウザ内に自動保存されます。Safariとホーム画面に追加したWebアプリでデータが共有されない場合があります。演習開始前にホーム画面へ追加し、同じアイコンから利用してください。別端末への引継ぎにはJSONバックアップを利用してください。</div></section>`;}
+function renderAnswer(){const r=ROWS[state.index],a=state.answers[state.index],c=state.confidence[state.index],locked=!!state.finishedAt;return `<div class="main-inner"><div class="qtop"><div class="qnum">問${r.n}<span style="font-size:14px;color:#8293a4;font-weight:500"> / 80</span></div><span class="category ${r.cls}">${r.domain}</span></div><div class="topic">${esc(r.topic)}</div><div class="detail">分類：${esc(r.subcategory)}</div><div class="source-box">${pdfSource()}</div><div class="selection-head">あなたの解答を選択</div><div class="answers">${KANA.map((k,i)=>`<button type="button" class="answer ${a===k?'selected':''}" data-action="answer" data-value="${k}" ${locked?'disabled':''} aria-pressed="${a===k}"><span class="letter">${k}</span>${a===k?'<span style="font-size:12px">選択中</span>':''}</button>`).join('')}</div><div class="confidence"><div class="selection-head" style="margin:0 0 12px">解答の自信度 <span class="muted small" style="font-weight:400">（任意・復習に利用）</span></div><div class="chiprow">${['確信あり','迷った','勘で選択'].map(s=>`<button class="chip ${c===s?'active':''}" data-action="confidence" data-value="${s}" ${locked?'disabled':''}>${s}</button>`).join('')}<button class="btn flat sm" data-action="clear" ${locked?'disabled':''}>解答を消す</button></div></div>${locked?'<div class="banner warn" style="margin-top:20px;margin-bottom:0">解答は提出済みです。初回結果を残すため、解答は変更できません。</div>':''}<div class="qfooter"><span class="steptext">${state.answers[state.index]?'解答済み':'未回答'} ・ キーボード 1〜4 で選択可</span><div class="next"><button class="btn" data-action="prev" ${state.index===0?'disabled':''}>← 前へ</button><button class="btn dark" data-action="next" ${state.index===79?'disabled':''}>次へ →</button></div></div></div>`;}
+function resultCalc(){if(!state.finishedAt)return null;return ROWS.map((r,i)=>({...r,answer:state.answers[i],correct:OFFICIAL_KEYS[i],ok:state.answers[i]===OFFICIAL_KEYS[i],confidence:state.confidence[i]}));}
+function miniResult(items,name){const n=items.filter(x=>x.ok).length,total=items.length;return `<div class="statrow"><div class="statline"><span>${name}</span><strong>${n}/${total} (${(100*n/total).toFixed(1)}%)</strong></div><div class="track"><div class="fill" style="width:${100*n/total}%"></div></div></div>`;}
+function renderResults(){
+ const scored=resultCalc(),answered=countAnswered(),blank=80-answered;
+ let out=`<div class="main-inner"><div class="qtop"><h2 style="margin:0;font-size:23px">採点・集計結果</h2><span class="category technology">全80問</span></div>`;
+ if(!state.finishedAt){out+=`<div class="banner warn" style="margin-top:22px">まだ解答を確定していません。初見演習を守るため、この画面では正答を表示しません。解答を終えたら「解答を確定・採点する」を押してください。</div><button class="btn primary" data-action="finish">解答を確定・採点する</button></div>`;return out;}
+ const correct=scored.filter(r=>r.ok).length,wrong=80-correct,unsureCorrect=scored.filter(r=>r.ok && ['迷った','勘で選択'].includes(r.confidence)).length;
+ out+=`<div class="muted small" style="margin-top:20px">総合正答率</div><div class="scorebig">${(correct/80*100).toFixed(1)}<span style="font-size:24px">%</span></div><div class="track" style="height:12px;margin-top:8px"><div class="fill" style="width:${correct/80*100}%"></div></div>
+ <div class="kpi-grid"><div class="kpi"><div class="muted small">正解</div><div class="value">${correct}問</div></div><div class="kpi"><div class="muted small">不正解・未回答</div><div class="value">${wrong}問</div></div><div class="kpi"><div class="muted small">所要時間</div><div class="value" style="font-size:17px">${fmtTime(elapsed())}</div></div></div>
+ <h3 class="section-heading">分野別正答率</h3>${miniResult(scored.slice(0,28),'ストラテジ系')}${miniResult(scored.slice(28,48),'マネジメント系')}${miniResult(scored.slice(48,80),'テクノロジ系')}
+ <div class="banner" style="margin-top:22px">復習対象は<strong>${wrong}問の不正解・未回答</strong>に加えて、<strong>${unsureCorrect}問の「迷った・勘で選択」した正解</strong>です。下の絞り込みで確認できます。</div>`;
+ const weak=Object.values(scored.reduce((acc,r)=>{let k=r.subcategory;if(!acc[k])acc[k]={name:k,correct:0,total:0,miss:0};acc[k].total++;if(r.ok)acc[k].correct++;else acc[k].miss++;return acc;},{})).filter(r=>r.miss>0).sort((a,b)=>b.miss-a.miss||b.total-a.total).slice(0,8);
+ if(weak.length)out+=`<h3 class="section-heading">間違えたテーマの分類（上位8件）</h3><div style="overflow-x:auto"><table class="results-table"><thead><tr><th>分類</th><th>正解 / 出題</th><th>誤答</th></tr></thead><tbody>${weak.map(w=>`<tr><td>${esc(w.name)}</td><td>${w.correct} / ${w.total}</td><td>${w.miss}問</td></tr>`).join('')}</tbody></table></div>`;
+ out+=`<h3 class="section-heading">問題別の判定</h3><div class="filterbar"><select class="select" id="resultFilter" aria-label="一覧の絞り込み"><option value="all" ${filter==='all'?'selected':''}>すべての問題</option><option value="wrong" ${filter==='wrong'?'selected':''}>不正解・未回答</option><option value="unsure" ${filter==='unsure'?'selected':''}>迷った・勘で選択</option><option value="blank" ${filter==='blank'?'selected':''}>未回答のみ</option></select></div><div style="overflow-x:auto"><table class="results-table"><thead><tr><th>問題</th><th>分野・テーマ</th><th>解答</th><th>正答</th><th>判定</th></tr></thead><tbody>`;
+ let list=scored;
+ if(filter==='wrong')list=list.filter(x=>!x.ok);
+ if(filter==='unsure')list=list.filter(x=>x.confidence==='迷った'||x.confidence==='勘で選択');
+ if(filter==='blank')list=list.filter(x=>!x.answer);
+ out+=list.map(r=>`<tr><td><a class="topiclink" href="#" data-action="nav" data-index="${r.n-1}">問${r.n}</a></td><td>${esc(r.topic)}<div class="tiny muted">${esc(r.domain)}${r.confidence?' ・ '+esc(r.confidence):''}</div></td><td>${r.answer||'—'}</td><td>${r.correct}</td><td>${r.ok?'<span class="tag">正解</span>':'<span class="tag bad">不正解</span>'}</td></tr>`).join('')||'<tr><td colspan="5" class="empty">条件に一致する問題がありません。</td></tr>';
+ out+=`</tbody></table></div><div class="hr"></div><div class="actions"><button class="btn primary" data-action="export-csv">採点結果をCSV保存</button><button class="btn" data-action="export-json">記録をJSON保存</button></div><p class="footerhint">採点は提供いただいた「オリジナル予想問題vol.2 解答例」に基づきます。初回結果を維持するため、提出後は解答を変更できません。再演習する場合はバックアップを保存後に初期化してください。</p></div>`;
+ return out;
+}
+function render(){renderSidebar();renderMobileDock();document.getElementById('main').innerHTML=`<div class="intro"><div><strong>予想問題２ ・ ${countAnswered()}/80問 解答済み</strong><p>端末に登録した問題PDFを見ながら、ア・イ・ウ・エを選択してください。採点は提出後に実施します。</p></div><div class="tabs"><button class="tab ${tab==='answer'?'active':''}" data-action="tab-answer">解答</button><button class="tab ${tab==='results'?'active':''}" data-action="tab-results">結果・集計</button></div></div>`+(tab==='answer'?renderAnswer():renderResults());}
+function download(name,contents,mime){const blob=new Blob([contents],{type:mime}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},1000);}
+function exportJSON(){download('itpassport_yosou2_backup.json',JSON.stringify({...state,exportedAt:new Date().toISOString()},null,2),'application/json;charset=utf-8');}
+function csvCell(s){return '"'+String(s??'').replace(/"/g,'""')+'"';}
+function exportCSV(){const data=[['問題番号','分野','テーマ','分類','自分の解答','自信度','正答','判定']];ROWS.forEach((r,i)=>{const answer=state.answers[i],key=state.finishedAt?OFFICIAL_KEYS[i]:null;data.push([r.n,r.domain,r.topic,r.subcategory,answer||'',state.confidence[i]||'',key||'',key?(answer===key?'正解':'不正解'):'未採点']);});download('itpassport_yosou2_results.csv','\uFEFF'+data.map(r=>r.map(csvCell).join(',')).join('\r\n'),'text/csv;charset=utf-8');}
+function handle(action,elem){if(action==='pdf-pick'){document.getElementById('problemFile').click();return;}if(action==='open-pdf'){openQuestionPdf(state.index);return;}if(action==='nav'){navigate(Number(elem.dataset.index));return;}if(action==='prev'){navigate(state.index-1);return;}if(action==='next'){navigate(state.index+1);return;}if(action==='tab-answer'){tab='answer';render();return;}if(action==='tab-results'){tab='results';render();return;}
+if(action==='answer'&& !state.finishedAt){state.answers[state.index]=elem.dataset.value;save();render();return;}
+if(action==='confidence'&& !state.finishedAt){const val=elem.dataset.value;state.confidence[state.index]=state.confidence[state.index]===val?null:val;save();render();return;}
+if(action==='clear'&& !state.finishedAt){state.answers[state.index]=null;state.confidence[state.index]=null;save();render();return;}
+if(action==='timer'){if(state.finishedAt){alert('提出済みのためタイマーは再開できません。');return;}if(state.runningSince){state.elapsed=elapsed();state.runningSince=null;}else{state.runningSince=Date.now();}save();render();return;}
+if(action==='finish'){if(state.finishedAt){tab='results';render();return;}let missing=80-countAnswered();if(!confirm(`解答を確定して採点します。${missing?'\n未回答は '+missing+' 問あります。':''}\n\n採点後は初回スコアの記録を守るため解答を変更できません。`))return;state.elapsed=elapsed();state.runningSince=null;state.finishedAt=new Date().toISOString();save();tab='results';render();window.scrollTo({top:0,behavior:'smooth'});return;}
+if(action==='export-json'){exportJSON();return;}if(action==='export-csv'){exportCSV();return;}
+if(action==='import-json'){document.getElementById('progressFile').click();return;}
+if(action==='reset'){if(!confirm('解答・時間・提出済みの採点結果をすべて初期化します。\n初期化前にJSONバックアップを保存してください。\n本当に初期化しますか？'))return;state=fresh();tab='answer';filter='all';save();render();return;}}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;if(b.tagName==='A')e.preventDefault();handle(b.dataset.action,b);});
+document.addEventListener('change',async e=>{if(e.target.id==='resultFilter'){filter=e.target.value;render();return;}const file=e.target.files?.[0];if(!file)return;if(e.target.id==='problemFile'){try{if(!(/\.pdf$/i.test(file.name)||file.type==='application/pdf'))throw Error('PDFファイルを選択してください。');await savePdfFile(file);setPdfUrl(file);alert('問題PDFをこの端末に登録しました。');}catch(ex){alert('PDFの登録に失敗しました。\n'+ex.message);}finally{e.target.value='';}return;}try{const txt=await file.text();if(e.target.id==='progressFile'){let o=JSON.parse(txt);if(!o||!Array.isArray(o.answers)||o.answers.length!==80)throw Error('このアプリの80問バックアップJSONではありません。');if(!confirm('現在の解答をバックアップ内容で上書きしますか？'))return;state={...fresh(),...o,answers:o.answers.map(v=>KANA.includes(v)?v:null),confidence:Array.isArray(o.confidence)&&o.confidence.length===80?o.confidence:Array(80).fill(null),index:Math.min(79,Math.max(0,Number(o.index)||0)),runningSince:null};tab=state.finishedAt?'results':'answer';save();render();alert('バックアップを復元しました。');}}catch(ex){alert('ファイルの読み込みに失敗しました。\n'+ex.message);}finally{e.target.value='';}});
+document.addEventListener('keydown',e=>{if(tab!=='answer'||state.finishedAt||e.altKey||e.metaKey||e.ctrlKey||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;if(['1','2','3','4'].includes(e.key)){e.preventDefault();state.answers[state.index]=KANA[Number(e.key)-1];save();render();}else if(e.key==='ArrowRight'&&state.index<79){e.preventDefault();navigate(state.index+1);}else if(e.key==='ArrowLeft'&&state.index>0){e.preventDefault();navigate(state.index-1);}});
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(e=>console.warn("Offline unavailable",e)));}
+initPdf();
+setInterval(()=>{const c=document.getElementById('clock');if(c)c.textContent=fmtTime(elapsed());},1000);
+render();
+</script>
+</body></html>
